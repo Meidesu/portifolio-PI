@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: rgb(12, 6, 19);
-    width: 100%;
+    background-attachment:fixed;
+    background-image: url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,25 +19,95 @@ body {
 .titulo {
     color: #ffffff;
     font-family: 'Pixelify Sans';
+    font-size: 70px;
     text-align: center;
     display: inline;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin: 5% 0% 2% 0%;
+
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgba(57, 29, 83, 0.75);
 }
 
 .caixa-de-cards {
-    height: 70vh;
     width: 80%;
-    background:  rgba(125, 74, 184, 0.089);;
+    height: 70%;
+    background:  rgba(125, 74, 184, 0.3);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center; 
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 25px;
 }
 
 .card {
-    background-color: rgb(57, 29, 83);
-    height: 100px;
-    width: 100px;
-    margin: 50px;
+    background-color: rgba(57, 29, 83, 0.6);
+    height: 50vh;
+    width: 15%;
+    align-items: center;
+    margin: 2%;
+    color: white;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+
 }
+
+.card header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    object-fit: cover;
+    height: 215px;
+    width: 215px ;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+.card header h2 {
+    font-family: 'Pixelify Sans';
+    margin-top: 6px;
+    text-wrap: wrap;
+    font-size: 30px;
+
+}
+
+.card main {
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.card main h3 {
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+    .card img {
+        height: 115px;
+        width: 115px ;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+  }
