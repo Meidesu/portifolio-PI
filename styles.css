@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 6, 19);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: #ffffff;
+    font-family: 'Pixelify Sans';
+    text-align: center;
+    display: inline;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.caixa-de-cards {
+    height: 70vh;
+    width: 80%;
+    background:  rgba(125, 74, 184, 0.089);;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(57, 29, 83);
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
