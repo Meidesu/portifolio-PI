@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-position: center;
 }
 
 .titulo {
@@ -31,14 +33,17 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translate(-15px, -15px) scale(1.05);
+    /* transform: scale(1.05); */
     background-color: rgba(57, 29, 83, 0.75);
+    border-top: 3px solid rgba(226, 196, 233, 0.75) ;
+    border-left: 3px solid rgba(226, 196, 253, 0.75) ;
 }
 
 .caixa-de-cards {
     width: 80%;
     height: 70%;
-    background:  rgba(125, 74, 184, 0.3);
+ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +55,7 @@ body {
 .card {
     background-color: rgba(57, 29, 83, 0.6);
     height: 50vh;
-    width: 15%;
+    width: 18%;
     align-items: center;
     margin: 2%;
     color: white;
@@ -81,25 +86,29 @@ body {
     height: 215px;
     width: 215px ;
     border-radius: 100%;
-    border: 2px solid transparent;
+    border: 5px solid rgba(226, 196, 253, 0.75);
 }
 
 .card header h2 {
     font-family: 'Pixelify Sans';
     margin-top: 6px;
     text-wrap: wrap;
-    font-size: 30px;
-
+    font-size: 35px;
+    text-align: center;
 }
 
 .card main {
     font-size: 16px;
     font-family: 'Poppins';
+    text-align: start;
+    width: 100%;
+    border: 2px solid rgba(226, 196, 253, 0.75);
 }
 
 .card main h3 {
+    margin-top: 10px;
     font-family: 'Pixelify Sans';
-    font-size: 20px;
+    font-size: 30px;
 }
 
 @media (max-width: 1400px) {
