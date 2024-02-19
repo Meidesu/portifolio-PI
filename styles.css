@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-image: url("./assets/bg.jpg");
     background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,21 +35,21 @@ body {
 
 .card:hover {
     height: auto;
-    transform: translate(-15px, -15px) scale(1.05) ;
+    transform: translate(-15px, -15px) scale(1.05);
     /* transform: scale(1.05); */
     background-color: rgba(57, 29, 83, 0.75);
-    border-top: 3px solid rgba(226, 196, 233, 0.75) ;
-    border-left: 3px solid rgba(226, 196, 253, 0.75) ;
+    border-top: 3px solid rgba(226, 196, 233, 0.75);
+    border-left: 3px solid rgba(226, 196, 253, 0.75);
 }
 
 .caixa-de-cards {
     width: 80%;
     height: 70%;
- 
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: top; 
+    align-items: top;
     justify-content: space-around;
     border-radius: 25px;
 }
@@ -70,7 +71,7 @@ body {
 
 }
 
-.card header { 
+.card header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +86,7 @@ body {
 .card img {
     object-fit: cover;
     height: 215px;
-    width: 215px ;
+    width: 215px;
     border-radius: 100%;
     border: 5px solid rgba(226, 196, 253, 0.75);
 }
@@ -121,11 +122,23 @@ body {
     font-size: 1.7vw;
 }
 
+.card main a {
+    text-decoration: underline;
+    font-size: 1.4vw;
+    font-family: 'Poppins';
+}
+
+.card main ul {
+    padding: 5%;
+}
+
+
 @media (max-width: 1400px) {
     .card img {
         height: 115px;
-        width: 115px ;
+        width: 115px;
     }
+
     .titulo {
         font-size: 40px;
     }
@@ -133,12 +146,12 @@ body {
 
 /* footer{
     /* padding: 20px 0; */
-    /* font-size: 50px; 
+/* font-size: 50px; 
     
 } */
 
 .confetti-button {
-    background-color:rgba(226, 196, 233, 0.15);
+    background-color: rgba(226, 196, 233, 0.15);
     color: #fff;
     padding: 10px 10px;
     border: none;
