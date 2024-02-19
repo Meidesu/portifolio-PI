@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementsByClassName("confetti-button")[0].addEventListener("click", function() {var duration = 15 * 1000;
+d
+ocument.addEventListener("DOMContentLoaded", function() {
+    document.getElementsByClassName("confetti-button")[0].addEventListener("click", function() {
+        var duration = 15 * 1000;
         var animationEnd = Date.now() + duration;
         var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
         
