@@ -33,7 +33,8 @@ body {
 }
 
 .card:hover {
-    transform: translate(-15px, -15px) scale(1.05);
+    height: auto;
+    transform: translate(-15px, -15px) scale(1.05) ;
     /* transform: scale(1.05); */
     background-color: rgba(57, 29, 83, 0.75);
     border-top: 3px solid rgba(226, 196, 233, 0.75) ;
@@ -47,15 +48,15 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: top; 
     justify-content: space-around;
     border-radius: 25px;
 }
 
 .card {
     background-color: rgba(57, 29, 83, 0.6);
-    height: 50vh;
-    width: 18%;
+    height: 30vh;
+    width: 15%;
     align-items: center;
     margin: 2%;
     color: white;
@@ -98,17 +99,32 @@ body {
 }
 
 .card main {
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Poppins';
     text-align: start;
     width: 100%;
-    border: 2px solid rgba(226, 196, 253, 0.75);
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card:hover main {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .card main h3 {
     margin-top: 10px;
     font-family: 'Pixelify Sans';
     font-size: 30px;
+}
+
+footer{
+    padding: 20px 0;
+    font-size: 50px;
+    
 }
 
 @media (max-width: 1400px) {
@@ -119,4 +135,4 @@ body {
     .titulo {
         font-size: 40px;
     }
-  }
+}
