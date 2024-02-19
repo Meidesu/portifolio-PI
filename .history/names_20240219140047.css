@@ -113,11 +113,11 @@
 }
 
 .ely:hover > .letter:nth-child(1){
-    transform: translate(-80%, -25%) rotate(8deg);
+    transform: translate(-80%, -20%) rotate(10deg);
 }
 .ely:hover > .letter:nth-child(2){
-    transform: translate(-40%, 10%) rotate(-4deg);
+    transform: translate(-30%, 20%) rotate(-15deg);
 }
 .ely:hover > .letter:nth-child(3){
-    transform: translate(0%, -15%) rotate(-8deg);
+    transform: translate(0%, -10%) rotate(20deg);
 }
