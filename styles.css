@@ -99,7 +99,7 @@ body {
 }
 
 .card main {
-    font-size: 24px;
+    font-size: 1.4vw;
     font-family: 'Poppins';
     text-align: start;
     width: 100%;
@@ -118,7 +118,7 @@ body {
 .card main h3 {
     margin-top: 10px;
     font-family: 'Pixelify Sans';
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 
 @media (max-width: 1400px) {
@@ -131,8 +131,30 @@ body {
     }
 }
 
-footer{
-    padding: 20px 0;
-    font-size: 50px;
+/* footer{
+    /* padding: 20px 0; */
+    /* font-size: 50px; 
     
+} */
+
+.confetti-button {
+    background-color:rgba(226, 196, 233, 0.15);
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+}
+
+.confetti-button:hover {
+    transform: scale(1.05);
+    background-color: rgba(57, 29, 83, 0.6);
+    backdrop-filter: blur(100px);
 }
