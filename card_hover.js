@@ -7,7 +7,7 @@ const cards = document.querySelectorAll('.card');
                 card.classList.add('hovered');
             });
 
-            header.addEventListener('mouseleave', () => {
+            card.addEventListener('mouseleave', () => {
                 card.classList.remove('hovered');
             });
         });
