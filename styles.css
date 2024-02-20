@@ -33,7 +33,7 @@ body {
     backdrop-filter: blur(100px);
 }
 
-.card:hover {
+.card.hovered {
     height: auto;
     transform: translate(-15px, -15px) scale(1.05);
     /* transform: scale(1.05); */
@@ -111,7 +111,7 @@ body {
     opacity: 0;
 }
 
-.card:hover main {
+.card.hovered main {
     transform: translateY(0px);
     opacity: 1;
 }
@@ -141,7 +141,6 @@ body {
     .titulo {
         font-size: 15px;
     }
-    .card
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
